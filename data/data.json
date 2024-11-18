@@ -1,0 +1,571 @@
+[
+  {
+    "job_name": "vue前端工程师",
+    "location": "北京·朝阳区·高碑店",
+    "salary_min": 11,
+    "salary_max": 20,
+    "year": "1-3年",
+    "education_level": "本科",
+    "company": "信银智达",
+    "scope": "计算机软件未融资100-499人",
+    "request": "前端开发JavaScriptHTMLVueWeb端",
+    "welfare": "年终奖，定期体检，带薪年假，五险一金，员工旅游，节日福利，通勤有班车",
+    "key_words": [
+      "html5",
+      "vue",
+      "react",
+      "js",
+      "javascript"
+    ],
+    "logo": "https://img.bosszhipin.com/beijin/upload/com/workfeel/20210622/0f166fc1589697b14cafff647c90dc5653b26a7e40813667e65565632dff5083.jpg?x-oss-process=image/resize,w_120,limit_0"
+  },
+  {
+    "job_name": "前端开发工程师（CSS方向）",
+    "location": "北京·朝阳区·团结湖",
+    "salary_min": 10,
+    "salary_max": 15,
+    "year": "1-3年",
+    "education_level": "本科",
+    "company": "泛华榕数",
+    "scope": "互联网未融资500-999人",
+    "request": "HTMLCSSJavaScriptLess移动端MVVM小程序",
+    "welfare": "补充医疗保险，年终奖，带薪年假，五险一金，加班补助，零食下午茶，员工旅游，定期体检，节日福利，培训津贴",
+    "key_words": [
+      "web",
+      "app",
+      "vue",
+      "javascript",
+      "压力"
+    ],
+    "logo": "https://img.bosszhipin.com/beijin/mcs/chatphoto/20210327/d62ebdf08ba4269171ae37750026e54ada07fb04f2acb7f24f78f8283b697165_s.jpg?x-oss-process=image/resize,w_120,limit_0"
+  },
+  {
+    "job_name": "react前端开发工程师",
+    "location": "北京·朝阳区·慈云寺",
+    "salary_min": 15,
+    "salary_max": 30,
+    "year": "1-3年",
+    "education_level": "本科",
+    "company": "掌数",
+    "scope": "信息安全未融资0-20人",
+    "request": "JavaScriptCSSReact前端开发经验",
+    "welfare": "零食下午茶，股票期权，通讯补贴，带薪年假，年终奖，五险一金，住房补贴，培训补贴",
+    "key_words": [
+      "web",
+      "vue",
+      "react",
+      "js",
+      "javascript"
+    ],
+    "logo": "https://img.bosszhipin.com/beijin/upload/com/logo/20201027/c6c01ecb96d6e55405dae1b6016b3630f55c2e3f4149fcc99a5856617c4c2acb.jpg?x-oss-process=image/resize,w_120,limit_0"
+  },
+  {
+    "job_name": "vue前端开发工程师",
+    "location": "北京·朝阳区·团结湖",
+    "salary_min": 6,
+    "salary_max": 12,
+    "year": "1年以内",
+    "education_level": "本科",
+    "company": "信德立",
+    "scope": "社交网络天使轮0-20人",
+    "request": "CSS3vue.jsnode.js",
+    "key_words": [
+      "web",
+      "vue",
+      "vue2",
+      "js",
+      "javascript"
+    ],
+    "logo": "https://img.bosszhipin.com/beijin/mcs/chatphoto/20170611/5c74486c7542df34f0f4769129b33f6f304526512e490faa5ae0075501deb712.jpg?x-oss-process=image/resize,w_120,limit_0"
+  },
+  {
+    "job_name": "vue前端工程师",
+    "location": "北京·朝阳区·三元桥",
+    "salary_min": 10,
+    "salary_max": 15,
+    "year": "1-3年",
+    "education_level": "本科",
+    "company": "峥嵘时代科技",
+    "scope": "移动互联网未融资20-99人",
+    "request": "Vue前端开发",
+    "welfare": "餐补，五险一金，全勤奖",
+    "key_words": [
+      "vue",
+      "js"
+    ],
+    "logo": "https://img.bosszhipin.com/beijin/mcs/chatphoto/20180301/2c3076dbecd0208de7ed0cec77dca8a7cfcd208495d565ef66e7dff9f98764da.jpg?x-oss-process=image/resize,w_120,limit_0"
+  },
+  {
+    "job_name": "React前端工程师",
+    "location": "北京·朝阳区·三元桥",
+    "salary_min": 15,
+    "salary_max": 30,
+    "year": "1-3年",
+    "education_level": "本科",
+    "company": "云链协作",
+    "scope": "计算机软件20-99人",
+    "request": "前端开发HTMLCSSJavaScriptReact",
+    "welfare": "股票期权，年终奖，交通补助，生日福利，节日福利，定期体检，住房补贴，带薪年假，全勤奖，工龄奖，员工旅游，餐补，零食下午茶，五险一金，节假日加班费，绩效奖金",
+    "key_words": [
+      "vue",
+      "react",
+      "js",
+      "javascript"
+    ],
+    "logo": "https://static.zhipin.com/zhipin-geek-seo/v5205/web/geek/images/defaultlogov2.jpg"
+  },
+  {
+    "job_name": "HTML5前端开发工程师",
+    "location": "北京·朝阳区·来广营",
+    "salary_min": 8,
+    "salary_max": 10,
+    "year": "1-3年",
+    "education_level": "本科",
+    "company": "米多琪互动",
+    "scope": "广告/公关/会展未融资0-20人",
+    "request": "CSSVue前端开发",
+    "welfare": "五险一金，员工旅游，定期体检，带薪年假，节日福利，弹性工时",
+    "key_words": [
+      "web",
+      "html5",
+      "vue",
+      "react",
+      "js",
+      "javascript"
+    ],
+    "logo": "https://img.bosszhipin.com/beijin/mcs/chatphoto/20190503/6224ab7a63ac93ec68d9626d2e2b49ef199cf156cadbb649af48cb3887297457_s.jpg?x-oss-process=image/resize,w_120,limit_0"
+  },
+  {
+    "job_name": "前端",
+    "location": "北京·朝阳区·太阳宫",
+    "salary_min": 16,
+    "salary_max": 18,
+    "year": "1-3年",
+    "education_level": "本科",
+    "company": "武汉贝塞尔",
+    "scope": "计算机硬件20-99人",
+    "request": "htmlajaxjavascrpt",
+    "key_words": [
+      "web",
+      "vue",
+      "react",
+      "js",
+      "javascript"
+    ],
+    "logo": "https://img.bosszhipin.com/beijin/icon/894ce6fa7e58d64d57e7f22d2f3a9d18afa7fcceaa24b8ea28f56f1bb14732c0.png?x-oss-process=image/resize,w_120,limit_0"
+  },
+  {
+    "job_name": "中/高级前端开发工程师(react)",
+    "location": "北京·朝阳区·望京",
+    "salary_min": 18,
+    "salary_max": 29,
+    "year": "1-3年",
+    "education_level": "本科",
+    "company": "在线",
+    "scope": "有乐今天",
+    "request": "大数据天使轮20-99人",
+    "welfare": "React",
+    "key_words": [
+      "web",
+      "html5",
+      "git",
+      "vue",
+      "react",
+      "js",
+      "javascript"
+    ],
+    "logo": "https://img.bosszhipin.com/beijin/upload/com/workfeel/20211231/7bf6f160950405e941caf69572f95ba63f5d9afb2bed630afa76b0db410bf2c9ede8a58356a8af77.jpg?x-oss-process=image/resize,w_120,limit_0"
+  },
+  {
+    "job_name": "前端",
+    "location": "北京·朝阳区·四惠",
+    "salary_min": 30,
+    "salary_max": 50,
+    "year": "1-3年",
+    "education_level": "本科",
+    "company": "咖瓦信息",
+    "scope": "计算机软件不需要融资500-999人",
+    "request": "typescriptcss3javascript",
+    "welfare": "股票期权，通讯补贴，餐补，加班补助，零食下午茶，带薪年假，定期体检，员工旅游，五险一金，节日福利，交通补助，包吃，年终奖，补充医疗保险",
+    "key_words": [],
+    "logo": "https://img.bosszhipin.com/beijin/mcs/chatphoto/20180601/7b4d3def93fff8a9b5f33ee58f86da10e2a49b2e46f1f29adcc2004a0a985391.jpg?x-oss-process=image/resize,w_120,limit_0"
+  },
+  {
+    "job_name": "前端",
+    "location": "北京",
+    "salary_min": 8,
+    "salary_max": 10,
+    "year": "1年以内",
+    "education_level": "本科",
+    "company": "华奥创景",
+    "scope": "文化艺术/娱乐未融资20-99人",
+    "request": "css3前端开发Java小程序移动端",
+    "welfare": "五险一金，带薪年假，节日福利，加班补助，年终奖",
+    "key_words": [
+      "web",
+      "git",
+      "vue",
+      "js",
+      "javascript"
+    ],
+    "logo": "https://img.bosszhipin.com/beijin/mcs/chatphoto/20190718/9831c7fb21239efa053036e5e8357304b6b14386589ddb1cb2b1c8bbba43e322_s.jpg?x-oss-process=image/resize,w_120,limit_0"
+  },
+  {
+    "job_name": "WEB前端",
+    "location": "北京·朝阳区·太阳宫",
+    "salary_min": 14,
+    "salary_max": 22,
+    "year": "1-3年",
+    "education_level": "本科",
+    "company": "云海明威",
+    "scope": "计算机软件未融资0-20人",
+    "request": "前端开发",
+    "welfare": "带薪年假，年终奖，餐补，零食下午茶，节日福利，股票期权，定期体检，五险一金，员工旅游",
+    "key_words": [
+      "web",
+      "html5",
+      "javascript"
+    ],
+    "logo": "https://c-res.zhipin.com/jrs/9701da243867e0025bb6c444151765f2.jpg?x-oss-process=image/resize,w_120,limit_0"
+  },
+  {
+    "job_name": "前端开发",
+    "location": "北京·朝阳区·高碑店",
+    "salary_min": 6,
+    "salary_max": 10,
+    "year": "1-3年",
+    "education_level": "本科",
+    "company": "莫斯廷商贸",
+    "scope": "生活服务(O2O)0-20人",
+    "request": "DIV+CSSCSS3BootStrap",
+    "key_words": [
+      "web",
+      "html5",
+      "js",
+      "javascript"
+    ],
+    "logo": "https://static.zhipin.com/zhipin-geek-seo/v5205/web/geek/images/defaultlogov2.jpg"
+  },
+  {
+    "job_name": "web前端",
+    "location": "北京·朝阳区·十里河",
+    "salary_min": 10,
+    "salary_max": 15,
+    "year": "1年以内",
+    "education_level": "本科",
+    "company": "雷达体育",
+    "scope": "文化艺术/娱乐B轮0-20人",
+    "request": "javascriptvue.jsDIV+CSS",
+    "welfare": "五险一金",
+    "key_words": [
+      "js"
+    ],
+    "logo": "https://img.bosszhipin.com/beijin/mcs/chatphoto/20180319/dbdc064f60ac2fb60752828024d68f7397c1d12700590197d4b2fcbf42ccc021.jpg?x-oss-process=image/resize,w_120,limit_0"
+  },
+  {
+    "job_name": "前端",
+    "location": "北京·朝阳区·望京",
+    "salary_min": 16,
+    "salary_max": 18,
+    "year": "1-3年",
+    "education_level": "本科",
+    "company": "心智无限",
+    "scope": "互联网0-20人",
+    "request": "Vue前端开发经验不接受居家办公",
+    "key_words": [
+      "app",
+      "vue",
+      "Vue3",
+      "react"
+    ],
+    "logo": "https://img.bosszhipin.com/beijin/icon/894ce6fa7e58d64d57e7f22d2f3a9d18afa7fcceaa24b8ea28f56f1bb14732c0.png?x-oss-process=image/resize,w_120,limit_0"
+  },
+  {
+    "job_name": "前端工程师",
+    "location": "北京·朝阳区·国贸",
+    "salary_min": 15,
+    "salary_max": 25,
+    "year": "1-3年",
+    "education_level": "本科",
+    "company": "领信智链",
+    "scope": "互联网不需要融资20-99人",
+    "request": "Javascriptcss3react",
+    "key_words": [
+      "web",
+      "html5",
+      "vue",
+      "react",
+      "js",
+      "javascript"
+    ],
+    "logo": "https://img.bosszhipin.com/beijin/upload/com/logo/20190708/dfc0f4c118b1dd448c338418ac7ec363f3342ac05c6bb34dd33787f8dd9087f4.png?x-oss-process=image/resize,w_120,limit_0"
+  },
+  {
+    "job_name": "Web前端",
+    "location": "北京·朝阳区·国贸",
+    "salary_min": 10,
+    "salary_max": 15,
+    "year": "1-3年",
+    "education_level": "本科",
+    "company": "在线",
+    "scope": "君下科技",
+    "request": "互联网0-20人",
+    "welfare": "Web前端HTML5HTML/CSS",
+    "key_words": [
+      "web",
+      "html5",
+      "vue",
+      "react",
+      "js",
+      "javascript"
+    ],
+    "logo": "https://img.bosszhipin.com/beijin/icon/894ce6fa7e58d64d57e7f22d2f3a9d18afa7fcceaa24b8ea28f56f1bb14732c0.png?x-oss-process=image/resize,w_120,limit_0"
+  },
+  {
+    "job_name": "Web前端",
+    "location": "北京·朝阳区·四惠",
+    "salary_min": 15,
+    "salary_max": 23,
+    "year": "1-3年",
+    "education_level": "本科",
+    "company": "芝士科技",
+    "scope": "大数据不需要融资20-99人",
+    "request": "前端开发ReactVuePC端小程序",
+    "welfare": "室内健身房，员工旅游，股票期权，零食下午茶，年终奖，电脑补贴，带薪年假，五险一金，节日福利",
+    "key_words": [
+      "web",
+      "vue",
+      "react",
+      "js",
+      "javascript"
+    ],
+    "logo": "https://img.bosszhipin.com/beijin/upload/com/workfeel/20220629/7bf6f160950405e90a7b734d1e2e9a857d25d73225dba1fed6337f3a91dcfcd00156d26d1ecaef0e.jpg?x-oss-process=image/resize,w_120,limit_0"
+  },
+  {
+    "job_name": "web前端",
+    "location": "北京·朝阳区·望京",
+    "salary_min": 25,
+    "salary_max": 30,
+    "year": "1-3年",
+    "education_level": "本科",
+    "company": "领创集团",
+    "scope": "互联网D轮及以上1000-9999人",
+    "request": "前端开发ReactJavaScriptWebpack",
+    "welfare": "定期体检，年终奖，补充医疗保险，午/晚餐，带薪年假，节日福利，零食下午茶，五险一金",
+    "key_words": [
+      "web",
+      "app",
+      "html5",
+      "git",
+      "npm",
+      "vue",
+      "react",
+      "javascript"
+    ],
+    "logo": "https://img.bosszhipin.com/beijin/mcs/chatphoto/20201123/3093eb5df54fe849d61ff09ec2e03e9ec66e652d52cd465f4c2d4ba9360df7ce_s.jpg?x-oss-process=image/resize,w_120,limit_0"
+  },
+  {
+    "job_name": "web前端",
+    "location": "北京·朝阳区·三元桥",
+    "salary_min": 12,
+    "salary_max": 15,
+    "year": "1-3年",
+    "education_level": "本科",
+    "company": "美到家",
+    "scope": "互联网C轮20-99人",
+    "request": "前端开发Node.jsJavaScriptCSSVueWeb端",
+    "welfare": "年终奖，定期体检，带薪年假，节日福利，员工旅游，通讯补贴，零食下午茶，五险一金，全勤奖",
+    "key_words": [
+      "web",
+      "npm",
+      "vue",
+      "react",
+      "js",
+      "javascript"
+    ],
+    "logo": "https://img.bosszhipin.com/beijin/mcs/chatphoto/20191108/88a900f8525e301515a67a0c072ee0e044e1ea44de165634d9e643b6360037db_s.jpg?x-oss-process=image/resize,w_120,limit_0"
+  },
+  {
+    "job_name": "web前端",
+    "location": "北京·朝阳区·东大桥",
+    "salary_min": 9,
+    "salary_max": 15,
+    "year": "1-3年",
+    "education_level": "本科",
+    "company": "小付钱包",
+    "scope": "互联网金融未融资100-499人",
+    "request": "vue.jsHTMLnode.js",
+    "welfare": "零食下午茶，节日福利，餐补，通讯补贴，补充医疗保险，股票期权，交通补助，年终奖，带薪年假，员工旅游，免费班车，全勤奖，加班补助，五险一金，住房补贴，定期体检",
+    "key_words": [
+      "web",
+      "html5",
+      "git",
+      "vue",
+      "react",
+      "js",
+      "javascript"
+    ],
+    "logo": "https://img.bosszhipin.com/beijin/mcs/chatphoto/20171116/5e02ecac31c65b97dc1917175b45443c1405625afae29096ad60725ed7470bbc.jpg?x-oss-process=image/resize,w_120,limit_0"
+  },
+  {
+    "job_name": "web前端（React native ）",
+    "location": "北京·朝阳区·来广营",
+    "salary_min": 10,
+    "salary_max": 20,
+    "year": "1-3年",
+    "education_level": "本科",
+    "company": "普奥云",
+    "scope": "大数据A轮100-499人",
+    "request": "javascrptreactCSS",
+    "key_words": [
+      "git",
+      "react",
+      "javascript"
+    ],
+    "logo": "https://img.bosszhipin.com/beijin/mcs/chatphoto/20161027/736702a597bbd7e5c0c3c1ea9ab166d8cfa4a98177500f23462db57f3f19001f.jpg?x-oss-process=image/resize,w_120,limit_0"
+  },
+  {
+    "job_name": "web前端",
+    "location": "北京·朝阳区·八里庄",
+    "salary_min": 3,
+    "salary_max": 7,
+    "year": "1-3年",
+    "education_level": "本科",
+    "company": "零壹智慧",
+    "scope": "计算机软件未融资20-99人",
+    "request": "HTMLCSSJavaScriptHTML5VueWeb端PC端",
+    "key_words": [
+      "html5",
+      "vue",
+      "javascript"
+    ],
+    "logo": "https://static.zhipin.com/zhipin-geek-seo/v5205/web/geek/images/defaultlogov2.jpg"
+  },
+  {
+    "job_name": "web前端",
+    "location": "北京·朝阳区·建国门",
+    "salary_min": 8,
+    "salary_max": 16,
+    "year": "1-3年",
+    "education_level": "本科",
+    "company": "浩瀚一方",
+    "scope": "移动互联网天使轮0-20人",
+    "request": "HBuilderangularionic",
+    "key_words": [
+      "app",
+      "html5",
+      "vue",
+      "react",
+      "js"
+    ],
+    "logo": "https://img.bosszhipin.com/beijin/mcs/chatphoto/20180519/dda2ce763b95f72c1e45f8644da2bdbdcfcd208495d565ef66e7dff9f98764da.jpg?x-oss-process=image/resize,w_120,limit_0"
+  },
+  {
+    "job_name": "web前端",
+    "location": "北京·朝阳区·大望路",
+    "salary_min": 7,
+    "salary_max": 10,
+    "year": "1-3年",
+    "education_level": "本科",
+    "company": "菲迪克斯",
+    "scope": "计算机软件0-20人",
+    "request": "前端开发Web端HTML",
+    "key_words": [
+      "web",
+      "html5"
+    ],
+    "logo": "https://img.bosszhipin.com/beijin/icon/894ce6fa7e58d64d57e7f22d2f3a9d18afa7fcceaa24b8ea28f56f1bb14732c0.png?x-oss-process=image/resize,w_120,limit_0"
+  },
+  {
+    "job_name": "前端开发",
+    "location": "北京·朝阳区·望京",
+    "salary_min": 15,
+    "salary_max": 18,
+    "year": "1-3年",
+    "education_level": "本科",
+    "company": "金科环境",
+    "scope": "环保已上市100-499人",
+    "request": "JavaScriptReactVue",
+    "welfare": "五险一金，带薪年假，年终奖，节日福利，加班补助，餐补，补充医疗保险，定期体检，交通补助",
+    "key_words": [
+      "web",
+      "react"
+    ],
+    "logo": "https://img.bosszhipin.com/beijin/upload/com/workfeel/20220402/7bf6f160950405e9c1df8666ffcf5d448d9c84a96f09edc16590b6103931bd0e491b043bda886483.jpg?x-oss-process=image/resize,w_120,limit_0"
+  },
+  {
+    "job_name": "web前端",
+    "location": "北京·朝阳区·甘露园",
+    "salary_min": 7,
+    "salary_max": 14,
+    "year": "1-3年",
+    "education_level": "本科",
+    "company": "亿澎互联网公司",
+    "scope": "移动互联网20-99人",
+    "request": "微信小程序",
+    "key_words": [
+      "web",
+      "app",
+      "git",
+      "vue",
+      "js"
+    ],
+    "logo": "https://img.bosszhipin.com/beijin/icon/894ce6fa7e58d64d57e7f22d2f3a9d18afa7fcceaa24b8ea28f56f1bb14732c0.png?x-oss-process=image/resize,w_120,limit_0"
+  },
+  {
+    "job_name": "前端工程师",
+    "location": "北京·朝阳区·朝外",
+    "salary_min": 11,
+    "salary_max": 20,
+    "year": "1-3年",
+    "education_level": "本科",
+    "company": "新弦文化",
+    "scope": "文化艺术/娱乐天使轮0-20人",
+    "request": "前端开发经验",
+    "key_words": [
+      "web",
+      "html5",
+      "vue",
+      "javascript"
+    ],
+    "logo": "https://img.bosszhipin.com/beijin/upload/com/workfeel/20221014/7bf6f160950405e934f7bc0ce065797fa12f381a2d51cf292bd0fbe9ce666d62f4b9fa02df2ffa93.jpg?x-oss-process=image/resize,w_120,limit_0"
+  },
+  {
+    "job_name": "web前端",
+    "location": "北京·朝阳区·广渠门",
+    "salary_min": 10,
+    "salary_max": 15,
+    "year": "1-3年",
+    "education_level": "本科",
+    "company": "中融环球",
+    "scope": "计算机软件20-99人",
+    "request": "前端开发后端开发JavaScriptHTMLCSSVue",
+    "welfare": "五险一金，补充医疗保险，定期体检，加班补助，年终奖，带薪年假",
+    "key_words": [
+      "app",
+      "html5",
+      "git",
+      "vue",
+      "react",
+      "javascript"
+    ],
+    "logo": "https://static.zhipin.com/zhipin-geek-seo/v5205/web/geek/images/defaultlogov2.jpg"
+  },
+  {
+    "job_name": "web前端",
+    "location": "北京·朝阳区·望京",
+    "salary_min": 25,
+    "salary_max": 35,
+    "year": "1-3年",
+    "education_level": "本科",
+    "company": "陌陌",
+    "scope": "互联网已上市1000-9999人",
+    "request": "前端开发",
+    "welfare": "交通补助，补充医疗保险，餐补，五险一金，节日福利，零食下午茶，年终奖，定期体检",
+    "key_words": [
+      "vue",
+      "react"
+    ],
+    "logo": "https://img.bosszhipin.com/beijin/mcs/chatphoto/20180601/a58b7df230e245fe9c020bc94f836ef0cfcd208495d565ef66e7dff9f98764da.jpg?x-oss-process=image/resize,w_120,limit_0"
+  }
+]
