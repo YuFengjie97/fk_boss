@@ -1,6 +1,21 @@
 import * as echarts from 'echarts';
 
-let app = document.querySelector("#app")
+
+
+// 学历歧视关键字
+const super_education = ['985', '211']
+// 外包关键字
+const suck_blood_words = ['外包', '外派', '劳务派遣', '人力', '驻场', '压力', '加班']
+const other_words = ['nextjs', 'next', 'web3', '区块链', 'jquery', '国企']
+const key_words = [...super_education, ...suck_blood_words, ...other_words];
+
+// for (let word of key_words) {
+//   let regex = new RegExp(`${word}`, "gim");
+//   if (regex.test(job_detail)) {
+//     job_info.key_words.push(word);
+//   }
+// }
+
 
 async function init_charts() {
   const res = await fetch('/data/data.json')

@@ -5,7 +5,7 @@ declare global {
   interface JobInfo {
     job_name: string
     job_area: string
-    salary: number
+    salary: string
     working_time: string
     education: string
     boss_name: string
@@ -17,5 +17,6 @@ declare global {
     company_size: string
     key_words: string[]
     boss_active_time: string
+    detail: string
   }
 }
