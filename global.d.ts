@@ -4,10 +4,10 @@ declare global {
 
   interface JobInfo {
     job_name: string
-    job_area: string
+    areaBusiness: string // 地区
     salary: string
-    working_time: string
-    education: string
+    experience: string // 工作时间
+    degree: string // 学历
     boss_name: string
     boss_job: string
     company_name: string

@@ -1,5 +1,7 @@
-import { By, Builder, Browser, WebElement, WebDriver, until, Key, Actions } from "selenium-webdriver";
+import { By, Builder, Browser, WebElement, WebDriver, until } from "selenium-webdriver";
 import fs from 'fs'
+// import Chrome from 'selenium-webdriver/chrome'
+
 
 interface Params {
   experience: string
@@ -7,44 +9,51 @@ interface Params {
   areaBusiness: string
 }
 
-const experience_map = {
+interface M {
+  key: string
+  value: {
+    [k in string]: string
+  }
+}
+
+const experience_map: M = {
   key: 'experience',
-  arr: [
-    { val: '103', info: '1年以内' },
-    { val: '104', info: '1-3年' },
-    { val: '105', info: '3-5年' },
-  ]
+  value: {
+    103: '1年以内',
+    104: '1-3年',
+    105: '3-5年',
+  }
 }
 
-const degree_map = {
+const degree_map: M = {
   key: 'degree',
-  arr: [
-    { val: '202', info: '大专' },
-    { val: '203', info: '本科' },
-    { val: '204', info: '硕士' },
-  ]
+  value: {
+    202: '大专',
+    203: '本科',
+    204: '硕士',
+  }
 }
 
-const areabussiness_map = {
+const areabussiness_map: M = {
   key: 'areaBusiness',
-  arr: [
-    { val: '110101', info: '东城区' },
-    { val: '110102', info: '西城区' },
-    { val: '110105', info: '朝阳区' },
-    { val: '110107', info: '石景山' },
-    { val: '110106', info: '丰台区' },
-    { val: '110109', info: '门头沟' },
-    { val: '110108', info: '海淀区' },
-    { val: '110111', info: '房山区' },
-    { val: '110113', info: '顺义区' },
-    { val: '110112', info: '通州区' },
-    { val: '110115', info: '大兴区' },
-    { val: '110114', info: '昌平区' },
-    { val: '110117', info: '平谷区' },
-    { val: '110116', info: '怀柔区' },
-    { val: '110119', info: '延庆区' },
-    { val: '110118', info: '密云区' },
-  ]
+  value: {
+    110101: '东城区',
+    110102: '西城区',
+    110105: '朝阳区',
+    110107: '石景山',
+    110106: '丰台区',
+    110109: '门头沟',
+    110108: '海淀区',
+    110111: '房山区',
+    110113: '顺义区',
+    110112: '通州区',
+    110115: '大兴区',
+    110114: '昌平区',
+    110117: '平谷区',
+    110116: '怀柔区',
+    110119: '延庆区',
+    110118: '密云区',
+  }
 }
 
 class Crawler {
@@ -54,9 +63,9 @@ class Crawler {
   log_file_name = ''
 
   params: Params = {
-    experience: '103',
-    degree: '202',
-    areaBusiness: '110101'
+    experience: '',
+    degree: '',
+    areaBusiness: ''
   }
 
   constructor(driver: WebDriver) {
@@ -65,7 +74,6 @@ class Crawler {
 
   update_params(params: Params) {
     this.params = params
-    this.data_file_name = `${params.areaBusiness}-${params.degree}-${params.experience}`
   }
 
   generate_url_by_params() {
@@ -74,39 +82,69 @@ class Crawler {
     return `${this.base_url}?${query}`
   }
 
-  // driver获取元素text
-  async getTextOrDefault(driver_or_el: WebElement | WebDriver, selector: string, defaultValue: string = ''): Promise<string> {
+
+  async wait_el_visable(selector: string, el_father: WebDriver | WebElement = this.driver, save_error = true): Promise<WebElement | null> {
+    const timeout = 5000
+
     try {
-      const foundElement = await driver_or_el.findElement(By.css(selector));
-      return await foundElement.getText() || defaultValue;
-    } catch (error) {
-      return defaultValue;
+      const el_located = until.elementLocated(By.css(selector))
+      await this.driver.wait(el_located, timeout);
+
+      const el = await el_father.findElement(By.css(selector))
+
+      const el_visable = until.elementIsVisible(el)
+      await this.driver.wait(el_visable, timeout);
+      return el
+    } catch (err) {
+      console.error(`---Element "${selector}" not found or timeout`, err);
+      if (!save_error) {
+        await this.save_err_log(`selector not found ${selector}`)
+      }
+      return null
     }
   }
 
-  async get_job_info_by_job_card(job_card: WebElement): Promise<JobInfo> {
+  async getTextOrDefault(selector: string, el_father: WebElement | WebDriver = this.driver): Promise<string> {
+    const el = await this.wait_el_visable(selector, el_father)
+    return el === null ? '' : el.getText()
+  }
+
+  async get_job_info_by_job_card(job_card: WebElement, job_info_list: JobInfo[]) {
     try {
       // 获取卡片上的信息
-      const job_name = await this.getTextOrDefault(job_card, 'span.job-name');
-      const job_area = await this.getTextOrDefault(job_card, 'span.job-area');
-      const salary = await this.getTextOrDefault(job_card, 'span.salary');
-      const working_time = await this.getTextOrDefault(job_card, 'ul.tag-list li:nth-child(1)');
-      const education = await this.getTextOrDefault(job_card, 'ul.tag-list li:nth-child(2)');
-      const boss_name = (await this.getTextOrDefault(job_card, 'div.info-public')).split('\n')[0];
-      const boss_job = await this.getTextOrDefault(job_card, 'div.info-public em');
-      const company_name = await this.getTextOrDefault(job_card, 'h3.company-name a');
+      const job_name = await this.getTextOrDefault('span.job-name', job_card);
+      const areaBusiness = await this.getTextOrDefault('span.job-area', job_card);
+      const salary = await this.getTextOrDefault('span.salary', job_card);
+      const experience = await this.getTextOrDefault('ul.tag-list li:nth-child(1)', job_card);
+      const degree = await this.getTextOrDefault('ul.tag-list li:nth-child(2)', job_card);
+      const boss_job = await this.getTextOrDefault('div.info-public em', job_card);
+      const boss_info = (await this.getTextOrDefault('div.info-public', job_card)).split('\n')[0];
+      const boss_name = boss_info.split(boss_job)[0]
+      const company_name = await this.getTextOrDefault('h3.company-name a', job_card);
       const company_logo = await job_card.findElement(By.css('div.company-logo img')).getAttribute('src');
-      const company_kind = await this.getTextOrDefault(job_card, 'ul.company-tag-list li:nth-child(1)');
-      const company_listing = await this.getTextOrDefault(job_card, 'ul.company-tag-list li:nth-child(2)');
-      const company_size = await this.getTextOrDefault(job_card, 'ul.company-tag-list li:nth-child(3)');
 
+
+      let company_kind = ''
+      let company_listing = '无阶段'
+      let company_size = ''
+
+      const company_info = await job_card.findElements(By.css('ul.company-tag-list li'))
+      if (company_info.length === 3) {
+        company_kind = await company_info[0].getText()
+        company_listing = await company_info[1].getText()
+        company_size = await company_info[2].getText()
+      }
+      else {
+        company_kind = await company_info[0].getText()
+        company_size = await company_info[1].getText()
+      }
 
       const job_info: JobInfo = {
         job_name,
-        job_area,
+        areaBusiness,
         salary,
-        working_time,
-        education,
+        experience,
+        degree,
         boss_name,
         boss_job,
         company_name,
@@ -120,17 +158,26 @@ class Crawler {
       };
 
 
+
+
       // 获取详情页上的信息
       await job_card.click();
       const handles = await this.driver.getAllWindowHandles();
       await this.driver.switchTo().window(handles[1]); // 切换详情页标签
-      await this.sleep(5000) // 详情页等待
+      await this.driver.sleep(3000)
 
-      // 详情页关键字
-      job_info.key_words.push(...(await this.getTextOrDefault(this.driver, 'ul.job-keyword-list')).split('\n'))
+      // console.log('--------------', await this.driver.getCurrentUrl());
+
+
+      await this.wait_el_visable('ul.job-keyword-list') // 关键字el
+      await this.wait_el_visable('div.job-detail-section div.job-sec-text:nth-child(4)') // 详情el
+
+      const key_words_text = await this.getTextOrDefault('ul.job-keyword-list')
+      const key_words = key_words_text.split('\n')
+
+      job_info.key_words.push(...key_words)
+
       const boss_active_time = await this.driver.findElements(By.css('span.boss-active-time'))
-
-      // 活跃状态
       if (boss_active_time.length > 0) {
         job_info.boss_active_time = boss_active_time[0].getText()
       }
@@ -139,55 +186,37 @@ class Crawler {
         job_info.boss_active_time = '刚刚活跃'
       }
 
+      job_info.detail = await this.getTextOrDefault('div.job-detail-section div.job-sec-text:nth-child(4)');
 
-      job_info.detail = await this.getTextOrDefault(this.driver, 'div.job-sec-text');
 
+      // 切回列表页
       await this.driver.close();
-      await this.driver.switchTo().window(handles[0]); // 切回列表页
+      await this.driver.switchTo().window(handles[0]);
+      await this.driver.sleep(1000)
 
-      console.log('------------', job_info);
+      job_info_list.push(job_info)
+      console.log('------current params get job: ', job_info_list.length);
 
-      return job_info
     } catch (e) {
-      console.log('-----------get_job_info-------------------------');
-      console.error(e);
-      console.log('-----------------------------------------------------------------');
       await this.save_err_log()
-      return {
-        job_name: 'can_not_find',
-        job_area: '',
-        salary: '',
-        working_time: '',
-        education: '',
-        boss_name: '',
-        boss_job: '',
-        company_name: '',
-        company_logo: '',
-        company_kind: '',
-        company_listing: '',
-        company_size: '',
-        key_words: [],
-        boss_active_time: '',
-        detail: ''
-      }
+      console.error('---get_job_info', e);
     }
   }
 
-  async get_jobs_from_page() {
+  async get_jobs_from_page(job_info_list: JobInfo[]) {
     try {
-      const job_cards = await this.driver.findElements(By.css('li.job-card-wrapper'));
+      await this.wait_el_visable('ul.job-list-box li.job-card-wrapper:nth-child(1)')
+
+      const job_cards = await this.driver.findElements(By.css('ul.job-list-box li.job-card-wrapper'));
       for (let job_card of job_cards) {
-        const job = await this.get_job_info_by_job_card(job_card);
-        this.save_data(job)
+        await this.get_job_info_by_job_card(job_card, job_info_list);
       }
     } catch (e) {
-      console.log('-----------get_jobs_from_page-------------------------');
-      console.error(e);
-      console.log('-----------------------------------------------------------------');
+      console.error('-----------get_jobs_from_page', e);
     }
   }
 
-  async create_err_log_file() {
+  create_log_file() {
     const currentDate = new Date();
     const year = currentDate.getFullYear()
     const month = (currentDate.getMonth() + 1).toString().padStart(2, '0')
@@ -197,103 +226,141 @@ class Crawler {
     const sec = currentDate.getSeconds().toString().padStart(2, '0')
     this.log_file_name = `${year}_${month}_${day}____${hour}_${min}_${sec}`;
 
-    // 创建日志文件
-    await fs.writeFile(`log/${this.log_file_name}.txt`, '', (err) => {
-      if (err) {
-        console.error('创建错误日志失败:', err);
-      }
-    });
-  }
-
-
-  async save_err_log() {
-    await fs.appendFile(`log/${this.log_file_name}.txt`, `${this.params.areaBusiness}-${this.params.experience}-${this.params.degree}\n`, (err) => {
-      if (err) {
-        console.error('错误日志写入失败', err);
-      }
-    });
-  }
-
-
-  async save_data(data: JobInfo) {
-    const filePath = `data/${this.data_file_name}.json`;
-    if (!fs.existsSync(filePath)) {
-      fs.writeFile(`data/${this.data_file_name}.json`, '', (err) => {
-        console.log('创建data.json发生错误');
-      })
+    try {
+      fs.writeFileSync(`log/${this.log_file_name}.txt`, '')
+    } catch (e) {
+      console.error('create log fail', e);
     }
-    await fs.appendFile(`data/${this.data_file_name}.json`, JSON.stringify(data, null, 2), (err) => {
-      console.log('写入data.json发生错误');
-    })
   }
 
 
-  sleep(timeout: number) {
-    return new Promise((resolve, reject) => {
-      setTimeout(resolve, timeout);
-    })
+  async save_err_log(info_ex: string = '') {
+    const url = await this.driver.getCurrentUrl()
+    const info = `
+      ${url}
+      ${areabussiness_map.value[this.params.areaBusiness]}-${experience_map.value[this.params.experience]}-${degree_map.value[this.params.degree]}
+      ${info_ex}
+      `
+    try {
+      fs.appendFileSync(`log/${this.log_file_name}.txt`, info)
+    } catch (e) {
+      console.error('----write log fail', e);
+    }
   }
+
+
+  save_data(data: {
+    experience: string
+    degree: string
+    areaBusiness: string
+    jobs: JobInfo[]
+  }) {
+    try {
+      fs.writeFileSync(`data/${this.data_file_name}.json`, JSON.stringify(data, null, 2))
+    } catch (e) {
+      console.error('save data fail error', e);
+    }
+  }
+
+
+  // async sleep(timeout: number) {
+  //   await this.driver.sleep(timeout)
+  //   // return new Promise((resolve, reject) => {
+  //   // setTimeout(resolve, timeout);
+  //   // })
+  // }
 
 
   // 返回值为是否已到达最后一页
   async go_next_page(): Promise<boolean> {
     try {
-      const next_page_bt = await this.driver.findElement(By.css('div.options-pages a:last-of-type'))
+      const next_page_bt = await this.wait_el_visable('div.options-pages a:last-of-type')
+      if (next_page_bt === null) {
+        return true
+      }
+      await this.hide_login_dialog()
 
-      if ('disabled' === await next_page_bt.getAttribute('class')) {
+      const bt_class_name = await next_page_bt.getAttribute('class')
+      const is_disabled = bt_class_name.includes('disabled');
+
+
+      if (is_disabled) {
         return true
       } else {
         await next_page_bt.click()
-        await this.sleep(10000) // 切页后等待
+        await this.wait_el_visable('ul.job-list-box li.job-card-wrapper:nth-child(1)')
+        await this.driver.sleep(3000)
         return false
       }
     } catch (e) {
-      console.log('-----------go_next_page-------------------------');
-      console.error(e);
-      console.log('-----------------------------------------------------------------');
+      await this.save_err_log()
+      console.error('-----------go_next_page', e);
       return true
     }
   }
 
-  // 获取当前参数下的所有页的工作
+  // 获取当前参数下的所有页的job
   async get_jobs_by_current_params() {
-    try {
-      let is_finished = false
-      do {
-        await this.get_jobs_from_page();
-        is_finished = await this.go_next_page()
-      } while (!is_finished)
+    let is_finished = false
+    const job_info_list: JobInfo[] = []
+    do {
+      await this.get_jobs_from_page(job_info_list);
+      is_finished = await this.go_next_page()
+    } while (!is_finished)
 
-    }
-    catch (e) {
-      console.log('-----------get_all_job_by_current_params-------------------------');
-      console.error(e);
-      console.log('-----------------------------------------------------------------');
-    }
+    this.save_data({
+      experience: this.params.experience,
+      degree: this.params.degree,
+      areaBusiness: this.params.areaBusiness,
+      jobs: job_info_list
+    })
   }
 
+  async hide_login_dialog() {
+    await this.wait_el_visable('div.boss-login-dialog', this.driver, false)
+    await this.driver.executeScript(`
+        const dialog = document.querySelector('div.boss-login-dialog');
+        if(dialog !== null) {
+          dialog.style.display = 'none';
+        }
+      `);
+  }
+
+
   async get_all_job() {
-    for (let areaBusiness of areabussiness_map.arr) {
-      for (let experience of experience_map.arr) {
-        for (let degree of degree_map.arr) {
+    this.create_log_file()
+
+    for (let [areaBusiness_key, areaBusiness_info] of Object.entries(areabussiness_map.value)) {
+      for (let [experience_key, experience_info] of Object.entries(experience_map.value)) {
+        for (let [degree_key, degree_info] of Object.entries(degree_map.value)) {
           const current_params: Params = {
-            areaBusiness: areaBusiness.val,
-            experience: experience.val,
-            degree: degree.val
+            areaBusiness: areaBusiness_key,
+            experience: experience_key,
+            degree: degree_key
           }
           this.update_params(current_params)
-          this.data_file_name = `${areaBusiness.info}-${experience.info}-${degree.info}`
+          this.data_file_name = `${areaBusiness_info}-${experience_info}-${degree_info}`
 
           const url = this.generate_url_by_params()
-          await this.driver.get(url);
-          await this.sleep(10000) // 首次进入,等待
+          console.log('---------new params-----------');
 
-          this.get_jobs_by_current_params()
+          await this.driver.get(url);
+          await this.driver.sleep(3000)
+          await this.hide_login_dialog()
+
+          // 空页判断
+          try {
+            const res = await this.wait_el_visable('ul.job-list-box li.job-card-wrapper:nth-child(1)')
+            if (res === null) continue
+
+            await this.get_jobs_by_current_params()
+          } catch (e) {
+            console.error('--------------get_all_job', e);
+          }
         }
       }
     }
-   await this.driver.quit()
-
+    this.driver.quit()
   }
 }
 
@@ -301,10 +368,15 @@ class Crawler {
 
 
 (async function main() {
-    const driver = await new Builder().forBrowser(Browser.CHROME).build();
+  // const options = new Chrome.Options();
+  // options.addArguments('--user-agent=CustomUserAgent/1.0');
 
-    const c = new Crawler(driver)
-    c.get_all_job()
 
- 
+  const driver = await new Builder()
+    .forBrowser(Browser.CHROME)
+    .build();
+
+  const c = new Crawler(driver)
+  c.get_all_job()
+
 })();
