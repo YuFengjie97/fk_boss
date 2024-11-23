@@ -253,6 +253,7 @@ class Crawler {
     experience: string
     degree: string
     areaBusiness: string
+    total: number
     jobs: JobInfo[]
   }) {
     try {
@@ -312,6 +313,7 @@ class Crawler {
       experience: this.params.experience,
       degree: this.params.degree,
       areaBusiness: this.params.areaBusiness,
+      total: job_info_list.length,
       jobs: job_info_list
     })
   }
