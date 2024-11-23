@@ -1,0 +1,89 @@
+
+      https://www.zhipin.com/web/geek/job?areaBusiness=110101&experience=103&degree=202&query=%E5%89%8D%E7%AB%AF&city=101010100
+      东城区-1年以内-大专
+      selector not found div.boss-login-dialog
+      
+      https://www.zhipin.com/web/geek/job?areaBusiness=110101&experience=103&degree=202&query=%E5%89%8D%E7%AB%AF&city=101010100
+      东城区-1年以内-大专
+      selector not found div.boss-login-dialog
+      
+      https://www.zhipin.com/web/geek/job?areaBusiness=110101&experience=103&degree=203&query=%E5%89%8D%E7%AB%AF&city=101010100
+      东城区-1年以内-本科
+      selector not found div.boss-login-dialog
+      
+      https://www.zhipin.com/web/geek/job?areaBusiness=110101&experience=103&degree=204&query=%E5%89%8D%E7%AB%AF&city=101010100
+      东城区-1年以内-硕士
+      selector not found div.boss-login-dialog
+      
+      https://www.zhipin.com/web/geek/job?areaBusiness=110101&experience=103&degree=204&query=%E5%89%8D%E7%AB%AF&city=101010100
+      东城区-1年以内-硕士
+      selector not found ul.job-list-box li.job-card-wrapper:nth-child(1)
+      
+      https://www.zhipin.com/job_detail/4a0f3bdcc168702a1HJy2tW4GFtX.html?lid=1TbFLPmNRRb.search.7&securityId=zqojDCYnEx4Lz-q19_TpsEQvZ_Y-XHqxyoiDNivDqoviYCjZJzB_KXeOa1prYCU_bV6nHTSXgZPgCzEDp_0JLo3hIEz3TTyz6kUIcIo_KWkuUVWpSENf&sessionId=
+      东城区-1-3年-大专
+      selector not found ul.job-keyword-list
+      
+      https://www.zhipin.com/job_detail/4a0f3bdcc168702a1HJy2tW4GFtX.html?lid=1TbFLPmNRRb.search.7&securityId=zqojDCYnEx4Lz-q19_TpsEQvZ_Y-XHqxyoiDNivDqoviYCjZJzB_KXeOa1prYCU_bV6nHTSXgZPgCzEDp_0JLo3hIEz3TTyz6kUIcIo_KWkuUVWpSENf&sessionId=
+      东城区-1-3年-大专
+      selector not found div.job-detail-section div.job-sec-text:nth-child(4)
+      
+      https://www.zhipin.com/job_detail/4a0f3bdcc168702a1HJy2tW4GFtX.html?lid=1TbFLPmNRRb.search.7&securityId=zqojDCYnEx4Lz-q19_TpsEQvZ_Y-XHqxyoiDNivDqoviYCjZJzB_KXeOa1prYCU_bV6nHTSXgZPgCzEDp_0JLo3hIEz3TTyz6kUIcIo_KWkuUVWpSENf&sessionId=
+      东城区-1-3年-大专
+      selector not found ul.job-keyword-list
+      
+      https://www.zhipin.com/job_detail/4a0f3bdcc168702a1HJy2tW4GFtX.html?lid=1TbFLPmNRRb.search.7&securityId=zqojDCYnEx4Lz-q19_TpsEQvZ_Y-XHqxyoiDNivDqoviYCjZJzB_KXeOa1prYCU_bV6nHTSXgZPgCzEDp_0JLo3hIEz3TTyz6kUIcIo_KWkuUVWpSENf&sessionId=
+      东城区-1-3年-大专
+      selector not found div.job-detail-section div.job-sec-text:nth-child(4)
+      
+      https://www.zhipin.com/web/geek/job?areaBusiness=110101&experience=104&degree=202&query=%E5%89%8D%E7%AB%AF&city=101010100
+      东城区-1-3年-大专
+      selector not found div.boss-login-dialog
+      
+      https://www.zhipin.com/web/geek/job?areaBusiness=110101&experience=104&degree=203&query=%E5%89%8D%E7%AB%AF&city=101010100
+      东城区-1-3年-本科
+      selector not found div.boss-login-dialog
+      
+      https://www.zhipin.com/web/geek/job?areaBusiness=110101&experience=104&degree=203&query=%E5%89%8D%E7%AB%AF&city=101010100
+      东城区-1-3年-本科
+      selector not found div.boss-login-dialog
+      
+      https://www.zhipin.com/web/geek/job?areaBusiness=110101&experience=104&degree=203&query=%E5%89%8D%E7%AB%AF&city=101010100&page=2
+      东城区-1-3年-本科
+      selector not found div.info-public em
+      
+      https://www.zhipin.com/web/geek/job?areaBusiness=110101&experience=104&degree=203&query=%E5%89%8D%E7%AB%AF&city=101010100&page=2
+      东城区-1-3年-本科
+      selector not found div.info-public
+      
+      https://www.zhipin.com/web/common/403.html?code=31
+      东城区-1-3年-本科
+      selector not found ul.job-keyword-list
+      
+      https://www.zhipin.com/web/common/403.html?code=31
+      东城区-1-3年-本科
+      selector not found div.job-detail-section div.job-sec-text:nth-child(4)
+      
+      https://www.zhipin.com/web/common/403.html?code=31
+      东城区-1-3年-本科
+      selector not found ul.job-keyword-list
+      
+      https://www.zhipin.com/web/common/403.html?code=31
+      东城区-1-3年-本科
+      selector not found div.job-detail-section div.job-sec-text:nth-child(4)
+      
+      https://www.zhipin.com/web/common/403.html?code=31
+      东城区-1-3年-本科
+      selector not found ul.job-keyword-list
+      
+      https://www.zhipin.com/web/common/403.html?code=31
+      东城区-1-3年-本科
+      selector not found div.job-detail-section div.job-sec-text:nth-child(4)
+      
+      https://www.zhipin.com/web/common/403.html?code=31
+      东城区-1-3年-本科
+      selector not found ul.job-keyword-list
+      
+      https://www.zhipin.com/web/common/403.html?code=31
+      东城区-1-3年-本科
+      selector not found div.job-detail-section div.job-sec-text:nth-child(4)
+      

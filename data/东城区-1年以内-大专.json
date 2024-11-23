@@ -1,0 +1,120 @@
+{
+  "experience": "103",
+  "degree": "202",
+  "areaBusiness": "110101",
+  "jobs": [
+    {
+      "job_name": "HTML5",
+      "areaBusiness": "北京·东城区·朝阳门",
+      "salary": "5-10K",
+      "experience": "1年以内",
+      "degree": "大专",
+      "boss_name": "杨女士",
+      "boss_job": "CEO",
+      "company_name": "深圳市海行技术有...",
+      "company_logo": "https://img.bosszhipin.com/beijin/app/mobile/normal-0e3f1e4441a21d4874cece3a3d81f0fe.png?x-oss-process=image/resize,w_100,limit_0",
+      "company_kind": "互联网",
+      "company_listing": "无阶段",
+      "company_size": "0-20人",
+      "key_words": [
+        "HTML5",
+        "游戏开发"
+      ],
+      "boss_active_time": {},
+      "detail": "开发微信小游戏\n熟悉微信小程序开发，有小游戏开发经验，能快速高质量完成开发任务"
+    },
+    {
+      "job_name": "java软件开发工程师",
+      "areaBusiness": "北京·东城区·左家庄",
+      "salary": "4-5K",
+      "experience": "1年以内",
+      "degree": "大专",
+      "boss_name": "姬女士",
+      "boss_job": "总裁助理、人力资源总监",
+      "company_name": "国创中博",
+      "company_logo": "https://img.bosszhipin.com/beijin/app/mobile/normal-0e3f1e4441a21d4874cece3a3d81f0fe.png?x-oss-process=image/resize,w_100,limit_0",
+      "company_kind": "企业服务",
+      "company_listing": "无阶段",
+      "company_size": "20-99人",
+      "key_words": [
+        "Java",
+        "大数据经验",
+        "分布式经验",
+        "MySQL",
+        "SQL Server",
+        "架构设计经验",
+        "Spring",
+        "有前端经验/技能",
+        "Python"
+      ],
+      "boss_active_time": {},
+      "detail": "1、有报表开发经验优先。\n2、熟练使用Java编程语言，熟练SpringBoot、SpringCloud、Mybatis等主流开源框架。\n3、熟悉MySQL、redis等数据库开发、熟练掌握SQL语句，有较好的数据库设计能力。\n4、熟练掌握JQuery、JavaScript、Ajax、layui、HTML5等Web前端技术。\n5、熟悉python脚本语言。\n6、熟悉idea,maven,git等开发管理工具。\n7、具备较强沟通能力，较强的学习能力和领悟能力，具有责任心和一定的抗压能力，具有较强的独立工作能力。"
+    },
+    {
+      "job_name": "医学内容运营",
+      "areaBusiness": "北京·东城区·雍和宫",
+      "salary": "7-11K",
+      "experience": "1年以内",
+      "degree": "大专",
+      "boss_name": "孙先生",
+      "boss_job": "招聘者",
+      "company_name": "轻松集团",
+      "company_logo": "https://img.bosszhipin.com/beijin/mcs/chatphoto/20200325/da64cb13a856391cc7fa5d4bbbfa4c1d6cdbc583bb15d36a94849e61b1ad0140_s.jpg?x-oss-process=image/resize,w_100,limit_0",
+      "company_kind": "互联网",
+      "company_listing": "C轮",
+      "company_size": "100-499人",
+      "key_words": [
+        "医药信息化服务提供商",
+        "医疗媒体/社区",
+        "护理相关专业",
+        "临床医学相关专业",
+        "全职"
+      ],
+      "boss_active_time": {},
+      "detail": "岗位职责：\n1、主要负责医学内容编辑；\n2、针对平台专科频道输出内容解决方案；\n3、针对合作医生的医学内容进行加工；\n4、负责医学报告的书写和润色，包含但不限于方案文档、项目报告等；\n5、配合医学经理进行医学表单设计、以及数据内容校对、统计和绘图工作；\n6、配合医学经理完成公司前端团队的医学支持工作及其它医学编辑工作；\n7、领导交代的其它事务。\n任职要求：\n1、大专及以上学历，护理、临床等专业优先考虑；\n2、有广告公司、医学期刊杂志医学编辑经验者优先；\n3、具备良好的文字表达和编辑能力，良好的英语阅读和写作技能；\n4、良好的团队协作和沟通能力，工作认真、细致、责任心强，能承受一定的工作压力；\n5、具备独立思考能力，保持持续学习的热情，关注医药领域的热点，及时提供有价值的医学建议。"
+    },
+    {
+      "job_name": "应用系统运维工程师",
+      "areaBusiness": "北京·东城区·天坛",
+      "salary": "6-11K·13薪",
+      "experience": "1年以内",
+      "degree": "大专",
+      "boss_name": "孙先生",
+      "boss_job": "招聘者",
+      "company_name": "梦创双杨",
+      "company_logo": "https://img.bosszhipin.com/beijin/mcs/chatphoto/20201209/918d8860ca211d4cf66280392cf8025a038b65569789deb230b0909751537960_s.jpg?x-oss-process=image/resize,w_100,limit_0",
+      "company_kind": "计算机软件",
+      "company_listing": "未融资",
+      "company_size": "1000-9999人",
+      "key_words": [
+        "MySQL",
+        "SQL",
+        "Java",
+        "Linux"
+      ],
+      "boss_active_time": {},
+      "detail": "1、负责应用系统日常维护及监控，保证应用系统稳定运行（包括巡检、处理事件等）。\n2、负责相关故障、疑难问题排查处理，编制汇总故障、问题，定期提交汇总报告。\n3、负责服务过程中问题现象和处理方案的收集撰写，形成知识库，并对知识库进行维护更新。\n4、配合开发需求，进行测试验证及应用系统的上线变更。\n5、负责应用系统升级、迁移、扩容需求与资源落实。\n6、负责定期对应用系统及数据的恢复验证工作。\n7、响应及解决客户的技术要求、疑问以及系统使用过程中遇到的各种问题。\n任职要求：\n1、有政府办公OA类、党校、高校、软件实施工作经验者优先；\n2、熟练使用HTML、JavaScript、CSS等技术，有一定的美工基础者优先；\n3、熟悉ORACLE或mysql等主流数据库产品，熟练使用SQL者优先；\n4、熟练使用office产品，如word, excel, ppt, visio等；\n5、认真、勤奋、有责任心，能接受一定时间的出差安排；\n6、统招全日制大专以上学历（学信网可查）。"
+    },
+    {
+      "job_name": "Android",
+      "areaBusiness": "北京·东城区·朝阳门",
+      "salary": "5-10K",
+      "experience": "1年以内",
+      "degree": "大专",
+      "boss_name": "杨女士",
+      "boss_job": "CEO",
+      "company_name": "深圳市海行技术有...",
+      "company_logo": "https://img.bosszhipin.com/beijin/app/mobile/normal-0e3f1e4441a21d4874cece3a3d81f0fe.png?x-oss-process=image/resize,w_100,limit_0",
+      "company_kind": "互联网",
+      "company_listing": "无阶段",
+      "company_size": "0-20人",
+      "key_words": [
+        "Android",
+        "HTML5",
+        "前端开发"
+      ],
+      "boss_active_time": {},
+      "detail": "ANDROID前端开发\n1.负责安卓客户端软件的开发和维护。\n2.按照项目计划，撰写规范技术文档，按时提交高质量代码，完成开发任务。\n3.对完成开发的安卓应用在提交到测试组之前进行部署和初测。\n4.解决APP中出现的问题和故障，同时提供性能优化，日志收集及分析统计方案。\n任职要求\n1.计算机相关专业大专以上\n2.熟悉JAVA语言\n3.熟悉安卓框架"
+    }
+  ]
+}
